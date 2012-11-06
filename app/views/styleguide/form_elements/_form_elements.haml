@@ -1,0 +1,34 @@
+%h1 Forms
+
+%div
+  %input{ :type=>"text", :placeholder=>"Text Input" }
+
+%div
+  %input{ :type=>"email", :placeholder=>"Email Input" }
+
+%div
+  %input{ :type=>"password", :placeholder=>"Password Input" }
+
+%div
+  %input{ :type=>"number", :placeholder=>"Number Input" }
+
+%div
+  %input{ :type=>"search", :placeholder=>"Search Input" }
+
+%div
+  %textarea{ :placeholder=>"Textarea." }
+
+%div
+  %select
+    - 4.times do
+      %option An Option
+
+
+.checkboxes
+  = render 'styleguide/form_elements/checkbox'
+
+.radios
+  = render 'styleguide/form_elements/radio'
+
+%div
+  %input{ :type=>"submit", :value=>"Submit Input"}

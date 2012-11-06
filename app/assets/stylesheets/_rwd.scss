@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1024px ) {
+  -webkit-text-size-adjust: none;
+}
+
+@media only screen and (max-width: 768px ) {}
+
+@media only screen and (max-width: 599px ) {
+  @include header-rwd;
+  @include footer-rwd;
+  @include styleguide-rwd;
+}//@media
+
+@media only screen and (max-width: 320px ) {}

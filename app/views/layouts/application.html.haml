@@ -1,18 +1,18 @@
-!!!
+- body_id = yield :body_id
+- body_class = yield :body_class
+- page_title = yield :title
+!!!5
 %html
   %head
-    %title Sassyseedsorg
+    %title Sassyseeds.org - #{page_title}
     %meta{:charset => "utf-8"}
     %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
     = stylesheet_link_tag :application, :media => "all"
     = javascript_include_tag :application
     = csrf_meta_tags
-  %body
-    #container.container
-      %header
-        = render 'layouts/navigation'
-        = render 'layouts/messages'
-      #main{:role => "main"}
-        = yield
-      %footer
+  %body{id: "#{body_id}", class: "#{body_class}"}
+    = render 'common/header'
+    %section#main{:role => "main"}
+      = yield
+    = render 'common/footer'

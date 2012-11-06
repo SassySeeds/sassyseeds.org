@@ -1,0 +1,16 @@
+// shared with all styleguide views.
+
+.source-sans { font-family: $source-sans; }
+
+.hero_text_bold {
+  @include typestyle( hero-thick );
+}//.hero_text_bold
+
+.hero_text_thin {
+  @include typestyle( hero-thin );
+}//.hero_text_thin
+
+.typography-page #main {
+  max-width: 1020px;
+  padding: 10px 40px 0 40px;
+}

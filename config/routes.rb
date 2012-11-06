@@ -1,3 +1,7 @@
 Sassyseedsorg::Application.routes.draw do
-  root :to => "home#index"
+  root :to => "styleguide#index"
+
+  match '/styleguide' => "styleguide#index", :as => "styleguide"
+  match '/styleguide/source_sans' => "styleguide#source_sans", :as => "source_sans"
+  match '/styleguide/exo' => "styleguide#exo", :as => "exo"
 end

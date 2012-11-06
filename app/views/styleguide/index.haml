@@ -1,0 +1,29 @@
+- content_for :title do
+  styleguide
+- content_for :body_id do
+  styleguide-index
+
+%nav
+  %a{:href => "#colors"}>Colors
+  %a{:href => "#typography"}>Typography
+  %a{:href => "#buttons"}>Buttons
+  %a{:href => "#forms"}>Forms
+  %a{:href => "#lists"}>Lists
+
+%article#colors
+  = render 'colors'
+
+%article#typography
+  = render 'styleguide/typography/typography'
+
+%article#buttons
+  = render 'buttons'
+
+%article#forms
+  = render 'styleguide/form_elements/form_elements'
+
+%article#lists
+  = render 'lists'
+
+%article#tables
+  = render 'tables'

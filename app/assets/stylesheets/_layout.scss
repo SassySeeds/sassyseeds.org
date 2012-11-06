@@ -1,0 +1,24 @@
+//------------------------------------------
+// global layout
+
+$page-padding: 20px;
+$gutter: 20px;
+
+#main-header, #main, #main-footer { padding: $gutter $page-padding; }
+
+hr { margin: $gutter auto; }
+
+// set to true to choose use a max-width
+$maxwidth: false;
+$max-width-size: 980px;
+
+@if $maxwidth == true {
+  body {
+    position: relative;
+    max-width: $max-width-size;
+    margin: 20px auto;
+    min-height: 100%;
+    height: auto;
+    @include box-shadow( 0 2px 10px 0 rgba(0,0,0, 0.7) );
+  } // body
+} // @if
