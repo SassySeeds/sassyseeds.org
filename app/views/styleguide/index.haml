@@ -4,14 +4,11 @@
   styleguide-index
 
 %nav
-  %a{:href => "#colors"}>Colors
   %a{:href => "#typography"}>Typography
   %a{:href => "#buttons"}>Buttons
   %a{:href => "#forms"}>Forms
   %a{:href => "#lists"}>Lists
-
-%article#colors
-  = render 'colors'
+  %a{:href => "#palette-swatch"}>Palette Swatch
 
 %article#typography
   = render 'styleguide/typography/typography'
@@ -27,3 +24,6 @@
 
 %article#tables
   = render 'tables'
+
+%article#palette-swatch
+  = render 'colors'

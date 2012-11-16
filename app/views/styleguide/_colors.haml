@@ -1,4 +1,13 @@
-%h1 Color Palette
+%h1 Palette Swatch
+%p Pass a size to the mixin.
+
+%pre
+  %code
+    :preserve
+      .color-palette  figure {
+        margin: 4px;
+        @include palette-swatch( 100px );
+      }
 
 .color-palette
   - 15.times do
