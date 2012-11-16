@@ -1,8 +1,10 @@
 #exo-page {
   font-family: $exo;
 
-  h1 {margin-top:20px;}
-  h2 {margin-top:10px;}
-  h3, h4 {margin-top:20px;}
-  h5, h6 {margin-top:20px;}
+  #main {
+    h1 {margin-top:20px;}
+    h2 {margin-top:10px;}
+    h3, h4 {margin-top:20px;}
+    h5, h6 {margin-top:20px;}
+  }
 }//#exo-page
